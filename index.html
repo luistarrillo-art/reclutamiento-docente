@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclutamiento de Talento Docente - Lambayeque | Luis Tarrillo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+        header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        .subtitle {
+            background: rgba(255,255,255,0.15);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        /* Servicios */
+        .servicios {
+            padding: 60px 0;
+            background: white;
+        }
+        .servicios h2 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #1e3c72;
+            margin-bottom: 40px;
+        }
+        .grid-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .servicio-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #2a5298;
+            transition: transform 0.3s;
+        }
+        .servicio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .servicio-card h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        /* Beneficios */
+        .beneficios {
+            padding: 60px 0;
+            background: #e8f0fe;
+        }
+        .beneficios h2 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #1e3c72;
+            margin-bottom: 40px;
+        }
+        .lista-beneficios {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .beneficio-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #d0d0d0;
+        }
+        .beneficio-item .icono {
+            background: #2a5298;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+        /* Sobre mí */
+        .sobre-mi {
+            padding: 60px 0;
+            background: white;
+            text-align: center;
+        }
+        .sobre-mi h2 {
+            color: #1e3c72;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        .sobre-mi p {
+            max-width: 700px;
+            margin: 0 auto 15px;
+            font-size: 1.1em;
+        }
+        /* CTA */
+        .cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+        }
+        .cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.3em;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .btn-whatsapp::before {
+            content: "💬 ";
+        }
+        .telefono-directo {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        .telefono-directo a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        footer p {
+            margin-bottom: 10px;
+        }
+        .footer-info {
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2em; }
+            header p { font-size: 1.1em; }
+            .cta h2 { font-size: 1.8em; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="subtitle"> Especialista en Reclutamiento Docente - Región Lambayeque, Perú</div>
+            <h1>Reclutamiento de Talento Docente</h1>
+            <p>Selección y evaluación de profesionales educativos calificados para instituciones de Lambayeque</p>
+        </div>
+    </header>
+
+    <!-- Servicios -->
+    <section class="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="grid-servicios">
+                <div class="servicio-card">
+                    <h3> Búsqueda Especializada</h3>
+                    <p>Identificación de candidatos docentes con perfiles específicos según las necesidades de tu institución educativa.</p>
+                </div>
+                <div class="servicio-card">
+                    <h3> Evaluación de Competencias</h3>
+                    <p>Procesos de selección rigurosos basados en la Ley de Reforma Magisterial y estándares educativos peruanos.</p>
+                </div>
+                <div class="servicio-card">
+                    <h3>🎓 Verificación de Credenciales</h3>
+                    <p>Validación de títulos, certificaciones y experiencia docente de todos los candidatos preseleccionados.</p>
+                </div>
+                <div class="servicio-card">
+                    <h3> Análisis de Ecosistema Competitivo</h3>
+                    <p>Estudio del mercado laboral docente en Lambayeque para ofrecer las mejores condiciones de contratación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="beneficios">
+        <div class="container">
+            <h2>¿Por Qué Elegirnos?</h2>
+            <div class="lista-beneficios">
+                <div class="beneficio-item">
+                    <div class="icono">✓</div>
+                    <div><strong>Ahorro de tiempo:</strong> Reducimos el tiempo de contratación en un 60% con procesos optimizados.</div>
+                </div>
+                <div class="beneficio-item">
+                    <div class="icono">✓</div>
+                    <div><strong>Docentes verificados:</strong> Todos los candidatos pasan por un riguroso proceso de validación.</div>
+                </div>
+                <div class="beneficio-item">
+                    <div class="icono">✓</div>
+                    <div><strong>Cumplimiento normativo:</strong> Procesos alineados con la Ley N° 29944 de Reforma Magisterial.</div>
+                </div>
+                <div class="beneficio-item">
+                    <div class="icono">✓</div>
+                    <div><strong>Base de datos regional:</strong> Acceso a una red de profesionales educativos de Lambayeque, Chiclayo, Ferreñafe y más.</div>
+                </div>
+                <div class="beneficio-item">
+                    <div class="icono">✓</div>
+                    <div><strong>Atención personalizada:</strong> Cada institución recibe un servicio adaptado a sus necesidades específicas.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="sobre-mi">
+        <div class="container">
+            <h2>Sobre el Consultor</h2>
+            <p><strong>Luis Alberto Tarrillo Delgado</strong></p>
+            <p>Investigador de mercado especializado en reclutamiento docente y análisis de ecosistemas competitivos en la región Lambayeque, Perú.</p>
+            <p>Con experiencia en la identificación de talento educativo y la implementación de procesos de selección eficientes para instituciones educativas.</p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para encontrar al docente ideal?</h2>
+            <p>Agenda una consulta gratuita inicial y descubre cómo podemos ayudarte</p>
+            <a href="https://wa.me/51917442609?text=Hola%20Luis,%
